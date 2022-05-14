@@ -1,0 +1,65 @@
+<header class="header ">
+    <div class="container-lg">
+        <div class="row header__inner d-flex align-items-center ">
+            <div class="header__logo col-lg-2 col-sm-6 col-4">
+                <img src="assets/images/title.svg" alt="">
+            </div>
+            <div class="header__navbar col-xl-6 col-lg-0  col-md-6 col-sm-6 col-12">
+                <ul class="d-flex">
+                    <li><a class="active" href="#" translate>{{"HEADER.main"}}</a></li>
+                    <li><a routerLink="#" translate>{{"HEADER.news"}}</a></li>
+                    <li><a href="#" translate>{{"HEADER.choise"}}</a></li>
+                    <li><a href="#" translate>{{"HEADER.team"}}</a></li>
+                    <li><a href="#" translate>{{"HEADER.faq"}}</a></li>
+                    <li><a href="#" translate>{{"HEADER.connect"}}</a></li>
+                </ul>
+            </div>
+            <div class="header__links col-xl-4 col-lg-10 col-sm-6 col-8 d-flex align-items-center justify-content-end">
+                <a (click)="changeLanguage()"><img  [src]="language" width="36px" height="36px" alt=""></a>
+                <a (click)="changeTheme()"><img  [src]="theme" width="36px" height="36px" alt=""></a>
+                <button class="header__btn" translate><img src="assets/images/log-in.svg" alt="" >{{"HEADER.login"}}</button>
+                <img (click)="changeHamburger()" class="header__hamburger" [src]="list" alt="" height="36px" width="36px">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div *ngIf="hamburger"  class="container-fluid bg-dark hamburger__menu ">
+    <div class="container ">
+        <div class="row d-flex align-items-center text-center">
+
+            <div class="col-sm-8 col-12 mt-2">
+                <div class="hamburger__list row row-col-sm d-flex justify-content-center">
+                    <div class="btn__link col-sm-auto col-12">
+                        <a    href="" translate translate>{{"HEADER.main"}}</a>
+                    </div>
+                    <div class="btn__link col-sm-auto col-12">
+                        <a   href="" translate>{{"HEADER.news"}}</a>
+                    </div>
+                    <div class="btn__link col-sm-auto col-12">
+                        <a  href="" translate>{{"HEADER.choise"}}</a>
+                    </div>
+                    <div class="btn__link col-sm-auto col-12">
+                        <a  href="" translate>{{"HEADER.team"}}</a>
+                    </div>
+                    <div class="btn__link col-sm-auto col-12">
+                        <a  href="" translate>{{"HEADER.faq"}}</a>
+                    </div>
+                    <div class="btn__link col-sm-auto col-12">
+                        <a  href="" translate>{{"HEADER.connect"}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-12 menu__btn mb-2">
+                <a (click)="changeLanguage()"><img  [src]="language" width="36px" height="36px" alt=""></a>
+                <a (click)="changeTheme()"><img  width="36px" height="36px" [src]="theme" alt=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

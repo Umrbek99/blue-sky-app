@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,::before,::after{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    // --button-color:#346DFF;
+    // --button-color-hover:#2652c0;
+    // --button-text-color:#ffffff;
+    // --button-link-color:#333333;
+    // --main-section-color:#EEF3FF;
+    // --section-inner-color:#F8F8FA;
+    // --section-h:#252B42;
+    // --white-color:#ffffff;
+    // --murder-color:#BDBDBD;
+    // --footer-bg-color:#1E2833;
+    // --murder-p: #858585;
+    // --primary-color:#23A6F0;
+    // --section-three-p:#737373;
+}
+
+body {
+  --bkg-color: rgb(255, 255, 255);
+  --text-color:#000000;
+  --button-color:#3469ee;
+  --button-color-hover:#2652c0;
+  --button-text-color:#ffffff;
+  --button-link-color:#333333;
+  --main-section-color:#EEF3FF;
+  --section-inner-color:#F8F8FA;
+  --section-h:#252B42;
+  --white-color:#ffffff;
+  --murder-color:#BDBDBD;
+  --footer-bg-color:#1E2833;
+  --murder-p: #858585;
+  --primary-color:#23A6F0;
+  --section-three-p:#737373;
+  transition: .8s;
+}
+
+
+body.dark-theme {
+  --bkg-color: #2c2c2c;
+  --text-color:#ffffff;
+  --button-color:#346DFF;
+  --button-color-hover:#2652c0;
+  --button-text-color:#ffffff;
+  --button-link-color:#f0f0f0;
+  --main-section-color:#394255;
+  --section-inner-color:#303030;
+  --section-h:#eeeeee;
+  --white-color:#ffffff;
+  --murder-color:#ffffff;
+  --footer-bg-color:#2c2c2c;
+  --murder-p: #e0e0e0;
+  --primary-color:#23A6F0;
+  --section-three-p:#6d6d6d;
+  transition: .8s;
+}
+
+body {
+  background-color: var(--bkg-color)!important;
+}
+

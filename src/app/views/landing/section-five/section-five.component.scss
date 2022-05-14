@@ -1,0 +1,77 @@
+.section__four {
+    padding:  90px 0px;
+}
+.section__info {
+    margin-bottom: 50px;
+    h5{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: var(--section-h);
+        line-height: 48px;
+    }
+    p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--section-h);
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+
+}
+.slide{
+    padding: 30px;
+    box-shadow: 0px 0px 24px rgba(85, 192, 255, 0.12);
+    margin: 10px;
+    text-align: center;
+    .team{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .team__img{
+            width: 120px;
+            height:120px;
+            border-radius: 50%;
+        }
+    }
+
+    .rates {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    h4,h5,h6 {
+        color: var(--section-h);
+    }
+    p{
+        margin-bottom: 5px;
+        color: var(--section-h);
+    }
+    .star__img {
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+    }
+    
+}
+
+iframe {
+    height: 300px;
+}
+@media screen and (min-width:720px) {
+    iframe {
+        height: 720px;
+    } 
+}
+
+.accordion-header button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+}
